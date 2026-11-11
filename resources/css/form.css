@@ -1,0 +1,55 @@
+input,
+textarea,
+select {
+    display: block;
+    width: 100%;
+    padding: 12px 14px;
+    color: var(--color-text);
+    background: #191c20;
+    border: 1px solid var(--color-border);
+    border-radius: 9px;
+    font: inherit;
+    transition: border-color 160ms ease, box-shadow 160ms ease, background 160ms ease;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #737c86;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    background: #1c2024;
+    border-color: #9eacba;
+    box-shadow: 0 0 0 3px rgb(158 172 186 / 14%);
+    outline: none;
+}
+
+label {
+    display: block;
+    margin-bottom: 7px;
+    color: #d3d9df;
+    font-size: 0.92rem;
+    font-weight: 550;
+}
+
+.form-group{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+form {
+    width: min(100%, 620px);
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    display: inline-block;
+    width: auto;
+}
